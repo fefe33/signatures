@@ -22,7 +22,7 @@ except:
     print('no search term specified')
     exit(0)
 
-if len(sys.argv) > 2 or len(sys.argv) < 2 or sys.argv[1] == '-h':
+if len(sys.argv) > 2 or len(sys.argv) < 2 or sys.argv[1] == '-h' or sys.argv[1] == '--help':
     print(help_text)
     exit(0)
 

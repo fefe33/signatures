@@ -2,7 +2,7 @@
 this is a simple program that returns the file signatures and offsets of some different file types based on the provided search term
 
 # how it works
-python3 signatures.py <file_type>
+<b>python3 signatures.py <file_type><b>
 use keyword 'all' to dump all file types and signatures to screen
 
 # other notes

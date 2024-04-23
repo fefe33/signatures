@@ -1,4 +1,4 @@
-# signatures
+# what is it?
 this is a simple program that returns the file signatures and offsets of some different file types based on the provided search term
 
 # how it works

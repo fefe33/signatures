@@ -8,6 +8,7 @@ help_text = '''
         use it like this:
 
             python3 signatures.py <extension type>
+            use keyword 'all' to print all mime types and signatures
 
         i didnt make the list
         original JSON file signature list available at: https://gist.github.com/Qti3e/6341245314bf3513abb080677cd1c93b#file-extensions-json

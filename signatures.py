@@ -35,7 +35,7 @@ obj = json.loads(x)
 #if the user wants to just read all of them
 if sys.argv[1].lower() == ('all'):
     for i in obj:
-        print(f'{obj[i]['mime']}\nsigns:')
+        print('{}\nsigns:'.format(obj[i]["mime"]))
         for j in obj[i]['signs']:
             s = j.split(',')
             print(f'-- -- -- --\n\toffset: {s[0]}\n\tsign: {s[1]}\n-- -- -- --\n')
@@ -49,7 +49,7 @@ elif sys.argv[1] in list(obj.keys()):
             continue
 
     print('-- -- -- --\n')
-    print(f'mime:\n\t{x['mime']}\n\nsignatures:')
+    print('mime:\n\t{}\n\nsignatures:'.format(x["mime"]))
     for i in x['signs']:
         offset_and_sig = i.split(',')
         print(f'\toffset: {offset_and_sig[0]}\n\tsign: {offset_and_sig[1]}\n\n\t-- -- -- --')

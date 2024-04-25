@@ -1,7 +1,7 @@
 #file signature identifier program
 #this is the only code for this project written by @fefe33
 #supposed to be very simple
-import json, sys
+import json, sys, os
 
 help_text = '''
         this program only takes 1 arg max.
@@ -26,7 +26,7 @@ if len(sys.argv) > 2 or len(sys.argv) < 2 or sys.argv[1] == '-h' or sys.argv[1] 
     print(help_text)
     exit(0)
 
-with open('signatures.json', 'r') as file:
+with open(os.path.dirname(os.path.realpath(__file__)) + '/signatures.json', 'r') as file:
     x = ''''''
     for i in file:
         x+=i
